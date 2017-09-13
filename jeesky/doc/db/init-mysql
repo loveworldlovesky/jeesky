@@ -1,0 +1,2 @@
+CREATE DATABASE  IF NOT EXISTS 'jeesky' DEFAULT CHARACTER SET utf8 COLLATE utf8_bin ;
+grant all privileges on jeesky.* to jeesky@localhost identified by 'jeesky';

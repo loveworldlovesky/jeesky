@@ -52,7 +52,9 @@ dependencies {
     	//mysql
     	"mysql:mysql-connector-java:${mysqlDriver}",
     	"org.aspectj:aspectjrt:${orgAspectjVersion}",
-    	"org.aspectj:aspectjweaver:${orgAspectjVersion}"
+    	"org.aspectj:aspectjweaver:${orgAspectjVersion}",
+    	//Quartz
+    	"org.quartz-scheduler:quartz:2.2.1"
     
     )
 }

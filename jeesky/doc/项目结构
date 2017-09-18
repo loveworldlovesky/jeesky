@@ -1,0 +1,25 @@
+fantasy 幻想
+Open source 开源
+包命名规则
+	平台功能		cn.luna.sky.*
+	二次开发功能	cn.luna.superman.*
+核心功能
+
+cn.luna.sky.core.* 核心模块
+cn.luna.sky.core.module.* 功能模块
+cn.luna.sky.common..* 通用功能模块
+cn.luna.sky.common.utils.* 通用工具模块
+
+
+
+
+1.核心模块
+	权限
+	代码自动生成
+	
+2.功能模块
+	登录
+	任务/收件箱/邮件
+3.工作流模块
+
+二次开发功能	

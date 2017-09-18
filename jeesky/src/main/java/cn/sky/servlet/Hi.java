@@ -18,7 +18,7 @@ public class Hi extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		String p = request.getParameter("p");
 		System.out.println(p);
-		
+//		com.mchange.v2.resourcepool.BasicResourcePoolFactory
 		response.getWriter().append("Served at: ").append(request.getContextPath()+p);
 	}
 

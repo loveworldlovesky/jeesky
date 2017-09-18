@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Merge Cells for DataGrid - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="../../themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../demo.css">
+	<script type="text/javascript" src="../../jquery.min.js"></script>
+	<script type="text/javascript" src="../../jquery.easyui.min.js"></script>
+	<script type="text/javascript">
+	var data = {"total":28,"rows":[
+	{"productid":"01","productname":"01-Koi","unitcost":10.00,"status":"P","listprice":36.50,"attr1":"Large","itemid":"EST-1"},
+	{"productid":"02","productname":"02-a","unitcost":12.00,"status":"P","listprice":18.50,"attr1":"Spotted Adult Female","itemid":"EST-10"},
+	{"productid":"03","productname":"03-a","unitcost":12.00,"status":"P","listprice":38.50,"attr1":"Venomless","itemid":"EST-11"},
+	{"productid":"04","productname":"04-a","unitcost":12.00,"status":"P","listprice":26.50,"attr1":"Rattleless","itemid":"EST-12"},
+	{"productid":"05","productname":"05-a","unitcost":12.00,"status":"P","listprice":35.50,"attr1":"Green Adult","itemid":"EST-13"},
+	{"productid":"06","productname":"06-a","unitcost":12.00,"status":"P","listprice":158.50,"attr1":"Tailless","itemid":"EST-14"},
+	{"productid":"07","productname":"07-a","unitcost":12.00,"status":"P","listprice":83.50,"attr1":"With tail","itemid":"EST-15"},
+	{"productid":"08","productname":"08-a","unitcost":12.00,"status":"P","listprice":23.50,"attr1":"Adult Female","itemid":"EST-16"},
+	{"productid":"09","productname":"09-a","unitcost":12.00,"status":"P","listprice":18.50,"attr1":"Spotted Adult Female","itemid":"EST-10"},
+	{"productid":"10","productname":"10-a","unitcost":12.00,"status":"P","listprice":38.50,"attr1":"Venomless","itemid":"EST-11"}	
+]};
+	var combodata = [
+{"productid":"01","productname":"01-Koi"},
+{"productid":"02","productname":"02-Dalmation"},
+{"productid":"03","productname":"03-Dalmation"},
+{"productid":"04","productname":"04-Dalmation"},
+{"productid":"05","productname":"05-Dalmation"},
+{"productid":"06","productname":"06-Dalmation"},
+{"productid":"07","productname":"07-Dalmation"},
+{"productid":"08","productname":"08-Dalmation"},
+{"productid":"09","productname":"09-Dalmation"},
+{"productid":"10","productname":"10-Dalmation"},
+{"productid":"11","productname":"11-Koi"},
+{"productid":"12","productname":"12-Dalmation"},
+{"productid":"13","productname":"13-Dalmation"},
+{"productid":"14","productname":"14-Dalmation"},
+{"productid":"15","productname":"15-Dalmation"},
+{"productid":"16","productname":"16-Dalmation"},
+{"productid":"17","productname":"17-Dalmation"},
+{"productid":"18","productname":"18-Dalmation"},
+{"productid":"19","productname":"19-Dalmation"},
+{"productid":"20","productname":"20-Dalmation"}
+];
+
+	</script>
+</head>
+<body>
+	<h2>Merge Cells for DataGrid</h2>
+	<p>Cells in DataGrid body can be merged.</p>
+	<div style="margin:20px 0;"></div>
+	<table id="dg" class="easyui-datagrid" title="Merge Cells for DataGrid" style="width:700px;height:250px"
+			data-options="
+				rownumbers: true,
+				singleSelect: true,
+				iconCls: 'icon-save',
+				data:data,
+				onLoadSuccess: onLoadSuccess,
+				onClickCell: onClickCell
+			">
+		<thead>
+			 <tr>
+                <th rowspan="2" data-options="field:'productid',width:100,
+						formatter:function(value,row){
+							console.log('productid='+value+','+row.productname);
+							//return value+'-'+row.productname;
+                            return row.productname;
+                        },
+                        editor:{
+                            type:'combobox',
+                            options:{
+                                valueField:'productid',
+                                textField:'productname',
+                                data:combodata,
+								onSelect: function(rec){   
+									$('#dg').datagrid('selectRow', editIndex);
+									var rowobj = $('#dg').datagrid('getSelected');
+									rowobj.productname = rec.productname;
+									console.log(rec.productid+','+rec.productname+','+rowobj.productname);
+								}
+							}
+                        }"
+				>Product</th>
+                <th rowspan="2" data-options="field:'itemid',width:80,editor:'textbox'">Item ID</th>
+				<th colspan="2" data-options="align:'center',width:50">成本信息</th>
+				<th colspan="2" data-options="align:'center',width:600">其它信息</th>
+            </tr>
+			<tr>
+				<th data-options="field:'listprice',width:80,align:'right',editor:{type:'numberbox',options:{precision:1}}">List Price</th>
+                <th data-options="field:'unitcost',width:80,align:'right',editor:'numberbox'">Unit Cost</th>
+                <th data-options="field:'attr1',width:250,					
+					editor:{type:'textbox'}
+				">Attribute</th>
+                <th data-options="field:'status',width:60,align:'center'">Status</th>
+			</tr>
+		</thead>
+	</table>
+	<script type="text/javascript">
+		function onLoadSuccess1(){}
+		function formatProduct(val,row){
+			//从combodata中查询其值进行展示
+		}
+		function onLoadSuccess(data){
+			//指定行的某些列执行合并
+			var merges = [{
+				index: 2,
+				rowspan: 2
+			},{
+				index: 5,
+				rowspan: 2
+			},{
+				index: 7,
+				rowspan: 2
+			}];
+			var len = data.rows.length;
+			console.log(len);
+			for(var i=0; i<len; i++){
+				//对每个偶数行执行合并
+				var mod = i%2;
+				//console.log(mod);
+				if(i%2 == 0){
+					$(this).datagrid('mergeCells',{
+						index: i,
+						field: 'productid',
+						rowspan: 2
+					});
+				}
+				//rownum 重新取值
+				
+			}
+		}
+		var editIndex = undefined;
+        function endEditing(){
+            if (editIndex == undefined){return true}
+            if ($('#dg').datagrid('validateRow', editIndex)){
+                $('#dg').datagrid('endEdit', editIndex);
+				//console.log('当前结束的编辑行:'+editIndex);
+			//因为进入行编辑后,原合并的行会自动拆分复原,这里再次将其合并
+			//偶数行,直接合并,奇数行,减一后再执行合并			
+			if(editIndex%2 == 0){
+				$('#dg').datagrid('mergeCells',{
+						index: editIndex,
+						field: 'productid',
+						rowspan: 2
+				});
+			}else{
+				$('#dg').datagrid('mergeCells',{
+						index: editIndex-1,
+						field: 'productid',
+						rowspan: 2
+				});
+			}
+			
+                editIndex = undefined;
+                return true;
+            } else {
+                return false;
+            }
+			
+        }
+        function onClickCell(index, field){
+			//单击时取消合并,编辑结束后,再次合并
+			//被合并单元格的数据,取消合并后不可编辑,主动方可以编辑
+            if (editIndex != index){
+                if (endEditing()){
+					$('#dg').datagrid('selectRow', index);
+					var rowobj = $('#dg').datagrid('getSelected');
+					//console.log(rowobj.itemid);
+					//console.log(rowobj.productid);
+					//console.log(rowobj.listprice);
+					$('#dg').datagrid('selectRow', index)
+                            .datagrid('beginEdit', index);
+                    
+                    editIndex = index;
+                }
+            }
+        }
+      
+	</script>
+</body>
+</html>

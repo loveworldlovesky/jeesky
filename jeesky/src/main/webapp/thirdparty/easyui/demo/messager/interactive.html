@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Interactive Messager - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="../../themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../demo.css">
+	<script type="text/javascript" src="../../jquery.min.js"></script>
+	<script type="text/javascript" src="../../jquery.easyui.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="jquery.confirm/jquery.confirm.css" />
+	
+	<script src="jquery.confirm/jquery.confirm.js"></script>
+
+</head>
+<body>
+	<h2>Interactive Messager</h2>
+	<p>Click on each button to display interactive message box.</p>
+	<div style="margin:20px 0;">
+		<a href="#" class="easyui-linkbutton" onclick="confirm1();">Confirm</a>
+		<a href="#" class="easyui-linkbutton" onclick="prompt1()">Prompt</a>
+		<a href="#" class="easyui-linkbutton" onclick="dd()">删除</a>
+	</div>
+	<script>
+		function confirm1(){
+			$.messager.confirm('My Title', 'Are you confirm this?', function(r){
+				if (r){
+					//alert('confirmed: '+r);
+				}
+			});
+			
+		}
+		function prompt1(){
+			$.messager.prompt('My Title', 'Please type something', function(r){
+				if (r){
+					alert('you type: '+r);
+				}
+			});
+		}
+		function dd(){
+			 var a=confirm("郭杨和小代是好朋友吗？");
+		alert('a');
+		}
+	</script>
+</body>
+</html>

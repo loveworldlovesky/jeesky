@@ -12,6 +12,8 @@ public class MyJob implements Job{
 	public void execute(JobExecutionContext context)
 			throws JobExecutionException {
 		log.info("hello,我的第一个任务调度程序");
+		//test git update
+		System.out.println("test");
 	}
 
 }

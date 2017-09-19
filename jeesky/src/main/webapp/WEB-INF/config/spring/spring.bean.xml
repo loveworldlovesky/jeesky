@@ -22,8 +22,6 @@
 		<description>从属性文件读取配置</description>
 		<property name="locations">
 			<list>				
-				<value>test1.properties</value>
-				<value>WEB-INF/test2.properties</value>
 				<value>WEB-INF/config/jdbc/jdbc-mysql.properties</value>
 				<value>WEB-INF/config/jdbc/hibernate.properties</value>
 			</list>

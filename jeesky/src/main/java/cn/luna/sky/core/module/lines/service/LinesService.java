@@ -15,6 +15,7 @@ import cn.luna.sky.core.base.manager.BaseManagerImpl;
 import cn.luna.sky.core.module.lines.dao.ILinesDao;
 import cn.luna.sky.core.module.lines.dao.LinesDao;
 import cn.luna.sky.core.module.lines.entity.TrainLines;
+import cn.luna.sky.core.module.testhib5.dao.Person;
   
 public class LinesService extends BaseManagerImpl<TrainLines>{
 	
@@ -50,6 +51,13 @@ public class LinesService extends BaseManagerImpl<TrainLines>{
 				TrainLines tl = new TrainLines();
 				tl.setTrainNum("TL00"+i);
 				tl.setId(UtilsUUID.getId());
+				
+				Person p = new Person();
+				p.setId(1);
+				p.setName("pp");
+				
+				session.save(p);
+				
 				session.save(tl);
 				session.flush();
 				

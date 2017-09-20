@@ -10,28 +10,23 @@
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate5.HibernateTransactionManager"
 		p:sessionFactory-ref="sessionFactory" />
-<!-- 
-	<bean id="hibernateSessionFactory" name="hibernateSessionFactory"
-		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean" >
-		<property name="dataSource" ref="dataSource"/>
-		<property name="mappingLocations" ref="hibernateMappingLocations"/>
-		<property name="hibernateProperties" ref="hibernateProperties"/>
-		<property name="namingStrategy" ref="namingStrategy"/>
-	</bean>
- -->	
 	<bean id="sessionFactory" 
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean" >
 		<property name="dataSource" ref="dataSource"/>
 		<property name="mappingLocations" ref="hibernateMappingLocations"/>
 		<property name="hibernateProperties" ref="hibernateProperties"/>
 		<property name="physicalNamingStrategy" ref="physicalNamingStrategy"/>
-		
+		<property name ="packagesToScan"  ref="annoclasses" />
 	</bean>
 	
  
 	<!-- Hibernate HBM 映射文件路径 -->
 	<util:list id="hibernateMappingLocations" list-class="java.util.ArrayList">
 		<value>classpath*:cn/**/*.hbm.xml</value>
+	</util:list>
+	
+	<util:list id="annoclasses" list-class="java.util.ArrayList">
+		<value>cn.luna.sky.core.module.testhib5.dao</value>
 	</util:list>
 
 	<!-- Hibernate 参数 -->
@@ -47,8 +42,5 @@
 			</props>
 		</property>
 	</bean>
-	<!-- 实体命名策略 把实体属性 userName 对应的数据库名称自动默认为 user_name (但在1对多关联时,column="xxx"不能省略) -->
 	<bean id="physicalNamingStrategy" class="org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl" />
-	
-
 </beans>

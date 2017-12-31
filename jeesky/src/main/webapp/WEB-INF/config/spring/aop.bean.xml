@@ -17,7 +17,7 @@
 	<!-- 如果需要给其它包切面, 需要另外配置
 	 -->
 	<aop:config proxy-target-class="true">
-		<aop:advisor pointcut="execution(* cn.sy..service.*Service123.*(..))" advice-ref="txAdvice" />
+		<aop:advisor pointcut="execution(* cn.luna.sky..service.*Service.*(..))" advice-ref="txAdvice" />
 	</aop:config>
 	 
 	<!-- 以save/insert/update/delete开头的方法名称会进行事务处理, 其他方法不能做事务处理--> 

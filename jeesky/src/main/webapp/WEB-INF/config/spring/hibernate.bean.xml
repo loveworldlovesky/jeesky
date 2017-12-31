@@ -10,31 +10,22 @@
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate5.HibernateTransactionManager"
 		p:sessionFactory-ref="sessionFactory" />
-	<!-- 
-	<bean id="hibernateSessionFactory" name="hibernateSessionFactory"
-		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean" >
+
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean" >
 		<property name="dataSource" ref="dataSource"/>
-		<property name="mappingLocations" ref="hibernateMappingLocations"/>
 		<property name="hibernateProperties" ref="hibernateProperties"/>
 		<property name="physicalNamingStrategy" ref="physicalNamingStrategy"/>
-	</bean>
-	 -->
-	 <!-- class="org.springframework.orm.hibernate5.LocalSessionFactoryBean" -->
-	<bean id="sessionFactory" 
-		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean" >
-		<property name="dataSource" ref="dataSource"/>
 		<property name="mappingLocations" ref="hibernateMappingLocations"/>
-		<property name="hibernateProperties" ref="hibernateProperties"/>
-		<property name="physicalNamingStrategy" ref="physicalNamingStrategy"/>
-		<property name ="packagesToScan"  ref="annoclasses" />
+		<property name="packagesToScan"  ref="annoclasses" />
 	</bean>
 	
  
 	<!-- Hibernate HBM 映射文件路径 -->
+	<!-- xml类引入方式 -->
 	<util:list id="hibernateMappingLocations" list-class="java.util.ArrayList">
 		<value>classpath*:cn/**/*.hbm.xml</value>
 	</util:list>
-	
+	<!-- 注解类引入方式 -->
 	<util:list id="annoclasses" list-class="java.util.ArrayList">
 		<value>cn.luna.sky.core.module.testhib5.dao</value>
 	</util:list>

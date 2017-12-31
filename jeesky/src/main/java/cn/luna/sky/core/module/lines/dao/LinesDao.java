@@ -5,7 +5,7 @@ import java.util.List;
 import org.hibernate.criterion.DetachedCriteria;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
-import org.springframework.orm.hibernate3.HibernateTemplate;
+import org.springframework.orm.hibernate5.HibernateTemplate;
 
 import cn.luna.sky.core.base.dao.BaseDaoImpl;
 import cn.luna.sky.core.module.lines.entity.TrainLines;

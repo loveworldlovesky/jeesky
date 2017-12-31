@@ -34,6 +34,7 @@ public class LinesController{
 	
 	@Autowired
 	LinesService service;
+	
 	@RequestMapping("sy/lines/lines.do")
 	public String forwardPage(Model model){
 		return "/module/lines/lines.jsp";

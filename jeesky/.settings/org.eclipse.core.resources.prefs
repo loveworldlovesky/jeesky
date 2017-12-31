@@ -5,6 +5,7 @@ encoding//src/main/java/cn/luna/sky/core/base/manager/BaseManagerImpl.java=UTF-8
 encoding//src/main/java/cn/luna/sky/core/base/manager/IBaseManager.java=UTF-8
 encoding//src/main/java/cn/luna/sky/core/base/pagination=UTF-8
 encoding//src/main/java/cn/luna/sky/core/module/lines/web/LinesController.java=UTF-8
+encoding//src/main/java/cn/luna/sky/core/module/menu/web/MenuController.java=UTF-8
 encoding//src/main/webapp/WEB-INF/config-test/jdbc/hibernate.properties=UTF-8
 encoding//src/main/webapp/WEB-INF/config-test/jdbc/jdbc-oracle.properties=UTF-8
 encoding//src/main/webapp/WEB-INF/config/jdbc/hibernate.properties=UTF-8

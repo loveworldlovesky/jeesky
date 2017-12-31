@@ -8,7 +8,7 @@ import java.util.Map;
 import javax.annotation.Resource;
 
 import org.hibernate.SessionFactory;
-import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
 
 import cn.luna.sky.core.base.pagination.Page;
 
@@ -16,7 +16,7 @@ public abstract class BaseDaoImpl<T> extends HibernateDaoSupport implements
 		IBaseDao<T> {
 	private Class<T> clazz;
 	private SessionFactory sf;
-	@SuppressWarnings("deprecation")
+	
 	@Resource(name = "sessionFactory")
 	public void setHibernateSessionFactory(SessionFactory sessionFactory) {
 		super.setSessionFactory(sessionFactory);

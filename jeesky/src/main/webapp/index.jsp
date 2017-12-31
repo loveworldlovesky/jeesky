@@ -5,8 +5,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<script type="text/javascript">
+	window.location.href = "/jeesky/module/main/main.jsp";
+</script>
 </head>
 <body>
-asadfasf
 </body>
 </html>

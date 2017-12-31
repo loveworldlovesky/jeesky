@@ -1,7 +1,7 @@
 build.commands=org.eclipse.jdt.core.javabuilder,org.eclipse.wst.common.project.facet.core.builder,org.eclipse.wst.validation.validationbuilder
 connection.arguments=
-connection.gradle.distribution=GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(E\:\\gradle-2.14.1-all\\gradle-2.14.1))
-connection.java.home=E\:\\java\\jdk1.7.0_71
+connection.gradle.distribution=GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(D:\\gradle-2.14.1-all\\gradle-2.14.1))
+connection.java.home=D:\\Java\\jdk1.8.0_45
 connection.jvm.arguments=
 connection.project.dir=
 derived.resources=.gradle,build

@@ -19,6 +19,7 @@ repositories {
 }
 ext {
     springVersion = "4.3.11.RELEASE"
+    jacksonVersion = "2.9.1"
     shiroVersion="1.3.2"
     orgAspectjVersion="1.8.10"
     mysqlDriver="5.1.30"
@@ -42,12 +43,17 @@ dependencies {
     compile 'javax.servlet:jstl:1.2'
     testCompile 'junit:junit:4.12'
     compile (//需要逗号分隔
-    	//Spring
+    	//SpringMVC
     	"org.springframework:spring-context-support:${springVersion}",
         "org.springframework:spring-orm:${springVersion}",
         "org.springframework:spring-oxm:${springVersion}",
         "org.springframework:spring-webmvc:${springVersion}",
         "org.springframework:spring-test:${springVersion}",
+        "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}",
+    	"com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}",
+    	"com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}",
+    	"com.fasterxml.jackson.module:jackson-module-jaxb-annotations:${jacksonVersion}",
+        
         //hibernate
         "org.hibernate:hibernate-core:${hibernateVersion}",
     	"org.hibernate:hibernate-c3p0:${hibernateVersion}",
@@ -55,8 +61,10 @@ dependencies {
     	"mysql:mysql-connector-java:${mysqlDriver}",
     	"org.aspectj:aspectjrt:${orgAspectjVersion}",
     	"org.aspectj:aspectjweaver:${orgAspectjVersion}",
-    	//Quartz
-    	"org.quartz-scheduler:quartz:2.2.1"
-    
+    	//Quartz 依赖的c3p0版本与hibernate依赖的c3p0版本不一致,会造成jar冲突
+    	//"org.quartz-scheduler:quartz:2.2.1"
     )
+    compile ('org.quartz-scheduler:quartz:2.2.1') {
+	  exclude group: 'c3p0', module: 'c3p0'
+	}
 }

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+   <class name="cn.luna.sky.core.module.menu.entity.Menu" 
+	 table="sys_menu"	dynamic-update="true" dynamic-insert="true"
+	optimistic-lock="version">
+   		<id name="menuId" type="string">
+            <column name="menu_id" length="64" />
+            <generator class="uuid" />
+        </id>
+        <version name="lockVersion"  type="int">
+        	<column name="lockVersion" not-null="true"></column>
+       	</version>
+        
+        <property name="parentMenuId" type="string">
+            <column name="parent_menu_id" length="64" not-null="true">
+            </column>
+        </property>
+        <property name="parentIds" type="string">
+            <column name="parent_ids" length="2000" not-null="false">
+            </column>
+        </property>
+        <property name="entityId" type="string">
+            <column name="entity_id" length="64">
+            </column>
+        </property>
+        <property name="menuName" type="string">
+            <column name="menu_name" length="100" not-null="true">
+            </column>
+        </property>
+        <property name="sortNum" type="int">
+            <column name="sort_num" not-null="true">
+            </column>
+        </property>
+        <property name="menuUrl" type="string">
+            <column name="menu_url" length="2000">
+            </column>
+        </property>
+        <property name="openType" type="string">
+            <column name="open_type" length="40">
+            </column>
+        </property>
+        <property name="icon" type="string">
+            <column name="icon" length="100">
+            </column>
+        </property>
+        <property name="isEnable" type="java.lang.Character">
+            <column name="is_enable" length="1">
+            </column>
+        </property>
+        <property name="isProtect" type="java.lang.Character">
+            <column name="is_protect" length="1">
+            </column>
+        </property>
+        <property name="permission" type="string">
+            <column name="permission" length="200">
+            </column>
+        </property>
+        <property name="i18nId" type="string">
+            <column name="i18n_id" length="200">
+            </column>
+        </property>
+        <property name="createUserId" type="string">
+            <column name="create_user_id" length="64" not-null="false">
+            </column>
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="create_date" length="19" not-null="false">
+            </column>
+        </property>
+        <property name="updateUserId" type="string">
+            <column name="update_user_id" length="64" not-null="false">
+            </column>
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name="update_date" length="19" not-null="false">
+            </column>
+        </property>
+        <property name="remarks" type="string">
+            <column name="remarks">
+            </column>
+        </property>
+        <property name="delFlag" type="char">
+            <column name="del_flag" length="1" not-null="false">
+            </column>
+        </property>
+   </class>
+</hibernate-mapping>

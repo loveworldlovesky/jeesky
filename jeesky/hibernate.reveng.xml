@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-name="sys_menu" match-catalog="jeesky"></table-filter>
+	<table catalog="jeesky" name="sys_menu">
+		<column name="menu_id"></column>
+		<column name="parent_menu_id"></column>
+		<column name="parent_ids"></column>
+		<column name="entity_id"></column>
+		<column name="menu_name"></column>
+		<column name="sort_num"></column>
+		<column name="menu_url"></column>
+		<column name="open_type"></column>
+		<column name="icon"></column>
+		<column name="is_enable"></column>
+		<column name="is_protect"></column>
+		<column name="permission"></column>
+		<column name="i18n_id"></column>
+		<column name="create_user_id"></column>
+		<column name="create_date"></column>
+		<column name="update_user_id"></column>
+		<column name="update_date"></column>
+		<column name="remarks"></column>
+		<column name="del_flag"></column>
+	</table>
+</hibernate-reverse-engineering>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-lazy-init="true">
+	
+	<bean id="menuService" class="cn.luna.sky.core.module.menu.service.MenuService">
+		<property name="baseDao" ref="menuDao" />
+	</bean>
+	<bean id="menuDao" scope="singleton"
+		class="cn.luna.sky.core.module.menu.dao.MenuDao">
+	</bean>
+	
+</beans>

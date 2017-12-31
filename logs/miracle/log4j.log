@@ -1,139 +1,42 @@
-2017-09-18 16:23:55.626 INFO [demos.quartz.SimpleExample] - <------- Initializing ---------------------->
-2017-09-18 16:23:55.669 INFO [org.quartz.impl.StdSchedulerFactory] - <Using default implementation for ThreadExecutor>
-2017-09-18 16:23:55.672 INFO [org.quartz.simpl.SimpleThreadPool] - <Job execution threads will use class loader of thread: main>
-2017-09-18 16:23:55.690 INFO [org.quartz.core.SchedulerSignalerImpl] - <Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl>
-2017-09-18 16:23:55.692 INFO [org.quartz.core.QuartzScheduler] - <Quartz Scheduler v.2.2.1 created.>
-2017-09-18 16:23:55.693 INFO [org.quartz.simpl.RAMJobStore] - <RAMJobStore initialized.>
-2017-09-18 16:23:55.694 INFO [org.quartz.core.QuartzScheduler] - <Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
->
-2017-09-18 16:23:55.694 INFO [org.quartz.impl.StdSchedulerFactory] - <Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'>
-2017-09-18 16:23:55.694 INFO [org.quartz.impl.StdSchedulerFactory] - <Quartz scheduler version: 2.2.1>
-2017-09-18 16:23:55.694 INFO [demos.quartz.SimpleExample] - <------- Initialization Complete ----------->
-2017-09-18 16:23:55.696 INFO [demos.quartz.SimpleExample] - <------- Scheduling Job  ------------------->
-2017-09-18 16:23:55.706 INFO [demos.quartz.SimpleExample] - <group1.job1 will run at: Mon Sep 18 16:24:00 CST 2017>
-2017-09-18 16:23:55.706 INFO [org.quartz.core.QuartzScheduler] - <Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.>
-2017-09-18 16:23:55.706 INFO [demos.quartz.SimpleExample] - <------- Started Scheduler ----------------->
-2017-09-18 16:23:55.706 INFO [demos.quartz.SimpleExample] - <------- Waiting 65 seconds... ------------->
-2017-09-18 16:24:00.007 INFO [demos.quartz.MyJob] - <hello,我的第一个任务调度程序>
-2017-09-18 16:24:30.183 INFO [demos.quartz.SimpleExample] - <------- Initializing ---------------------->
-2017-09-18 16:24:30.222 INFO [org.quartz.impl.StdSchedulerFactory] - <Using default implementation for ThreadExecutor>
-2017-09-18 16:24:30.225 INFO [org.quartz.simpl.SimpleThreadPool] - <Job execution threads will use class loader of thread: main>
-2017-09-18 16:24:30.240 INFO [org.quartz.core.SchedulerSignalerImpl] - <Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl>
-2017-09-18 16:24:30.242 INFO [org.quartz.core.QuartzScheduler] - <Quartz Scheduler v.2.2.1 created.>
-2017-09-18 16:24:30.243 INFO [org.quartz.simpl.RAMJobStore] - <RAMJobStore initialized.>
-2017-09-18 16:24:30.244 INFO [org.quartz.core.QuartzScheduler] - <Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
->
-2017-09-18 16:24:30.245 INFO [org.quartz.impl.StdSchedulerFactory] - <Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'>
-2017-09-18 16:24:30.245 INFO [org.quartz.impl.StdSchedulerFactory] - <Quartz scheduler version: 2.2.1>
-2017-09-18 16:24:30.245 INFO [demos.quartz.SimpleExample] - <------- Initialization Complete ----------->
-2017-09-18 16:24:30.246 INFO [demos.quartz.SimpleExample] - <------- Scheduling Job  ------------------->
-2017-09-18 16:24:30.260 INFO [demos.quartz.SimpleExample] - <group1.job1 will run at: Mon Sep 18 16:25:00 CST 2017>
-2017-09-18 16:24:30.260 INFO [org.quartz.core.QuartzScheduler] - <Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.>
-2017-09-18 16:24:30.260 INFO [demos.quartz.SimpleExample] - <------- Started Scheduler ----------------->
-2017-09-18 16:24:30.260 INFO [demos.quartz.SimpleExample] - <------- Waiting 65 seconds... ------------->
-2017-09-18 16:24:35.260 INFO [demos.quartz.SimpleExample] - <------- Shutting Down --------------------->
-2017-09-18 16:24:35.260 INFO [org.quartz.core.QuartzScheduler] - <Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.>
-2017-09-18 16:24:35.260 INFO [org.quartz.core.QuartzScheduler] - <Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.>
-2017-09-18 16:24:35.728 INFO [org.quartz.core.QuartzScheduler] - <Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.>
-2017-09-18 16:24:35.728 INFO [demos.quartz.SimpleExample] - <------- Shutdown Complete ----------------->
-2017-09-18 16:36:58.947 INFO [demos.quartz.SimpleExample] - <------- Initializing ---------------------->
-2017-09-18 16:36:58.982 INFO [org.quartz.impl.StdSchedulerFactory] - <Using default implementation for ThreadExecutor>
-2017-09-18 16:36:58.985 INFO [org.quartz.simpl.SimpleThreadPool] - <Job execution threads will use class loader of thread: main>
-2017-09-18 16:36:59.000 INFO [org.quartz.core.SchedulerSignalerImpl] - <Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl>
-2017-09-18 16:36:59.001 INFO [org.quartz.core.QuartzScheduler] - <Quartz Scheduler v.2.2.1 created.>
-2017-09-18 16:36:59.002 INFO [org.quartz.simpl.RAMJobStore] - <RAMJobStore initialized.>
-2017-09-18 16:36:59.003 INFO [org.quartz.core.QuartzScheduler] - <Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
->
-2017-09-18 16:36:59.003 INFO [org.quartz.impl.StdSchedulerFactory] - <Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'>
-2017-09-18 16:36:59.003 INFO [org.quartz.impl.StdSchedulerFactory] - <Quartz scheduler version: 2.2.1>
-2017-09-18 16:36:59.003 INFO [demos.quartz.SimpleExample] - <------- Initialization Complete ----------->
-2017-09-18 16:36:59.004 INFO [demos.quartz.SimpleExample] - <2017-09-18 16:36:59===2017-09-18 16:36:59>
-2017-09-18 16:36:59.005 INFO [demos.quartz.SimpleExample] - <------- Scheduling Job  ------------------->
-2017-09-18 16:36:59.015 INFO [demos.quartz.SimpleExample] - <group1.job1 will run at: Mon Sep 18 16:37:00 CST 2017>
-2017-09-18 16:36:59.015 INFO [org.quartz.core.QuartzScheduler] - <Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.>
-2017-09-18 16:36:59.016 INFO [demos.quartz.SimpleExample] - <------- Started Scheduler ----------------->
-2017-09-18 16:36:59.016 INFO [demos.quartz.SimpleExample] - <------- Waiting 65 seconds... ------------->
-2017-09-18 16:37:00.006 INFO [demos.quartz.MyJob] - <hello,我的第一个任务调度程序>
-2017-09-18 16:37:04.016 INFO [demos.quartz.SimpleExample] - <------- Shutting Down --------------------->
-2017-09-18 16:37:04.016 INFO [org.quartz.core.QuartzScheduler] - <Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.>
-2017-09-18 16:37:04.016 INFO [org.quartz.core.QuartzScheduler] - <Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.>
-2017-09-18 16:37:04.507 INFO [org.quartz.core.QuartzScheduler] - <Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.>
-2017-09-18 16:37:04.507 INFO [demos.quartz.SimpleExample] - <------- Shutdown Complete ----------------->
-2017-09-18 16:53:11.895 INFO [demos.quartz.SimpleTriggerExample] - <------- Initializing ------------------->
-2017-09-18 16:53:11.944 INFO [org.quartz.impl.StdSchedulerFactory] - <Using default implementation for ThreadExecutor>
-2017-09-18 16:53:11.948 INFO [org.quartz.simpl.SimpleThreadPool] - <Job execution threads will use class loader of thread: main>
-2017-09-18 16:53:11.970 INFO [org.quartz.core.SchedulerSignalerImpl] - <Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl>
-2017-09-18 16:53:11.972 INFO [org.quartz.core.QuartzScheduler] - <Quartz Scheduler v.2.2.1 created.>
-2017-09-18 16:53:11.973 INFO [org.quartz.simpl.RAMJobStore] - <RAMJobStore initialized.>
-2017-09-18 16:53:11.974 INFO [org.quartz.core.QuartzScheduler] - <Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
->
-2017-09-18 16:53:11.975 INFO [org.quartz.impl.StdSchedulerFactory] - <Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'>
-2017-09-18 16:53:11.975 INFO [org.quartz.impl.StdSchedulerFactory] - <Quartz scheduler version: 2.2.1>
-2017-09-18 16:53:11.975 INFO [demos.quartz.SimpleTriggerExample] - <------- Initialization Complete -------->
-2017-09-18 16:53:11.975 INFO [demos.quartz.SimpleTriggerExample] - <------- Scheduling Jobs ---------------->
-2017-09-18 16:53:11.992 INFO [demos.quartz.SimpleTriggerExample] - <group1.job1 will run at: Mon Sep 18 16:53:15 CST 2017 and repeat: 0 times, every 0 seconds>
-2017-09-18 16:53:11.992 INFO [demos.quartz.SimpleTriggerExample] - <group1.job2 will run at: Mon Sep 18 16:53:15 CST 2017 and repeat: 0 times, every 0 seconds>
-2017-09-18 16:53:11.993 INFO [demos.quartz.SimpleTriggerExample] - <group1.job3 will run at: Mon Sep 18 16:53:15 CST 2017 and repeat: 10 times, every 10 seconds>
-2017-09-18 16:53:11.993 INFO [demos.quartz.SimpleTriggerExample] - <group1.job3 will [also] run at: Mon Sep 18 16:53:15 CST 2017 and repeat: 2 times, every 10 seconds>
-2017-09-18 16:53:11.993 INFO [demos.quartz.SimpleTriggerExample] - <group1.job4 will run at: Mon Sep 18 16:53:15 CST 2017 and repeat: 5 times, every 10 seconds>
-2017-09-18 16:53:11.995 INFO [demos.quartz.SimpleTriggerExample] - <group1.job5 will run at: Mon Sep 18 16:58:11 CST 2017 and repeat: 0 times, every 0 seconds>
-2017-09-18 16:53:11.995 INFO [demos.quartz.SimpleTriggerExample] - <group1.job6 will run at: Mon Sep 18 16:53:15 CST 2017 and repeat: -1 times, every 40 seconds>
-2017-09-18 16:53:11.995 INFO [demos.quartz.SimpleTriggerExample] - <------- Starting Scheduler ---------------->
-2017-09-18 16:53:11.995 INFO [org.quartz.core.QuartzScheduler] - <Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.>
-2017-09-18 16:53:11.996 INFO [demos.quartz.SimpleTriggerExample] - <------- Started Scheduler ----------------->
-2017-09-18 16:53:11.998 INFO [demos.quartz.SimpleTriggerExample] - <group1.job7 will run at: Mon Sep 18 16:53:15 CST 2017 and repeat: 20 times, every 300 seconds>
-2017-09-18 16:53:11.998 INFO [demos.quartz.SimpleTriggerExample] - <'Manually' triggering job8...>
-2017-09-18 16:53:11.998 INFO [demos.quartz.SimpleTriggerExample] - <------- Waiting 30 seconds... -------------->
-2017-09-18 16:53:12.011 INFO [demos.quartz.SimpleJob] - <SimpleJob says: group1.job8 executing at Mon Sep 18 16:53:12 CST 2017>
-2017-09-18 16:53:15.003 INFO [demos.quartz.SimpleJob] - <SimpleJob says: group1.job3 executing at Mon Sep 18 16:53:15 CST 2017>
-2017-09-18 16:53:15.005 INFO [demos.quartz.SimpleJob] - <SimpleJob says: group1.job1 executing at Mon Sep 18 16:53:15 CST 2017>
-2017-09-18 16:53:15.006 INFO [demos.quartz.SimpleJob] - <SimpleJob says: group1.job4 executing at Mon Sep 18 16:53:15 CST 2017>
-2017-09-18 16:53:15.006 INFO [demos.quartz.SimpleJob] - <SimpleJob says: group1.job2 executing at Mon Sep 18 16:53:15 CST 2017>
-2017-09-18 16:53:15.008 INFO [demos.quartz.SimpleJob] - <SimpleJob says: group1.job3 executing at Mon Sep 18 16:53:15 CST 2017>
-2017-09-18 16:53:15.008 INFO [demos.quartz.SimpleJob] - <SimpleJob says: group1.job6 executing at Mon Sep 18 16:53:15 CST 2017>
-2017-09-18 16:53:15.009 INFO [demos.quartz.SimpleJob] - <SimpleJob says: group1.job7 executing at Mon Sep 18 16:53:15 CST 2017>
-2017-09-18 16:53:25.000 INFO [demos.quartz.SimpleJob] - <SimpleJob says: group1.job4 executing at Mon Sep 18 16:53:25 CST 2017>
-2017-09-18 16:53:25.000 INFO [demos.quartz.SimpleJob] - <SimpleJob says: group1.job3 executing at Mon Sep 18 16:53:25 CST 2017>
-2017-09-18 16:53:25.002 INFO [demos.quartz.SimpleJob] - <SimpleJob says: group1.job3 executing at Mon Sep 18 16:53:25 CST 2017>
-2017-09-18 17:07:07.395 INFO [demos.quartz.SimpleExample] - <------- Initializing ---------------------->
-2017-09-18 17:07:07.439 INFO [org.quartz.impl.StdSchedulerFactory] - <Using default implementation for ThreadExecutor>
-2017-09-18 17:07:07.443 INFO [org.quartz.simpl.SimpleThreadPool] - <Job execution threads will use class loader of thread: main>
-2017-09-18 17:07:07.458 INFO [org.quartz.core.SchedulerSignalerImpl] - <Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl>
-2017-09-18 17:07:07.459 INFO [org.quartz.core.QuartzScheduler] - <Quartz Scheduler v.2.2.1 created.>
-2017-09-18 17:07:07.460 INFO [org.quartz.simpl.RAMJobStore] - <RAMJobStore initialized.>
-2017-09-18 17:07:07.461 INFO [org.quartz.core.QuartzScheduler] - <Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
->
-2017-09-18 17:07:07.461 INFO [org.quartz.impl.StdSchedulerFactory] - <Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'>
-2017-09-18 17:07:07.461 INFO [org.quartz.impl.StdSchedulerFactory] - <Quartz scheduler version: 2.2.1>
-2017-09-18 17:07:07.461 INFO [demos.quartz.SimpleExample] - <------- Initialization Complete ----------->
-2017-09-18 17:07:07.462 INFO [demos.quartz.SimpleExample] - <------- Scheduling Job  ------------------->
+2017-10-02 16:01:17.416 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - <Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]>
+2017-10-02 16:01:17.505 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - <Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7d9d1a19, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@39c0f4a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1794d431, org.springframework.test.context.support.DirtiesContextTestExecutionListener@42e26948, org.springframework.test.context.transaction.TransactionalTestExecutionListener@57baeedf, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@343f4d3d]>
+2017-10-02 16:01:17.714 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from file [D:\git\jeesky\jeesky\src\main\webapp\WEB-INF\config-test\spring\aop.bean.xml]>
+2017-10-02 16:01:18.030 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from file [D:\git\jeesky\jeesky\src\main\webapp\WEB-INF\config-test\spring\data-source.bean.xml]>
+2017-10-02 16:01:18.075 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from file [D:\git\jeesky\jeesky\src\main\webapp\WEB-INF\config-test\spring\hibernate.bean.xml]>
+2017-10-02 16:01:18.137 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from file [D:\git\jeesky\jeesky\src\main\webapp\WEB-INF\config-test\spring\spring.bean.xml]>
+2017-10-02 16:01:18.490 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from file [D:\git\jeesky\jeesky\bin\cn\luna\sky\core\module\lines\Lines.bean.xml]>
+2017-10-02 16:01:18.499 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from file [D:\git\jeesky\jeesky\bin\cn\luna\sky\core\module\menu\menu.bean.xml]>
+2017-10-02 16:01:18.512 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@4e9ba398: startup date [Mon Oct 02 16:01:18 CST 2017]; root of context hierarchy>
+2017-10-02 16:01:19.274 INFO [com.mchange.v2.log.MLog] - <MLog clients using slf4j logging.>
+2017-10-02 16:01:19.734 INFO [com.mchange.v2.c3p0.C3P0Registry] - <Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]>
+2017-10-02 16:01:21.009 INFO [org.hibernate.Version] - <HHH000412: Hibernate Core {5.2.11.Final}>
+2017-10-02 16:01:21.012 INFO [org.hibernate.cfg.Environment] - <HHH000206: hibernate.properties not found>
+2017-10-02 16:01:22.803 WARN [org.hibernate.orm.deprecation] - <HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.>
+2017-10-02 16:01:22.974 INFO [org.hibernate.annotations.common.Version] - <HCANN000001: Hibernate Commons Annotations {5.0.1.Final}>
+2017-10-02 16:01:23.300 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - <Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1ic9q1p2jxfa1sr07hi|3514a4c0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1ic9q1p2jxfa1sr07hi|3514a4c0, idleConnectionTestPeriod -> 0, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3307/jeesky?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 40, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]>
+2017-10-02 16:01:23.805 INFO [org.hibernate.dialect.Dialect] - <HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect>
+2017-10-02 16:01:24.293 WARN [org.hibernate.id.UUIDHexGenerator] - <HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead>
+2017-10-02 16:01:25.419 INFO [org.springframework.orm.hibernate5.HibernateTransactionManager] - <Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource[ identityToken -> 1hge1ic9q1p2jxfa1sr07hi|3514a4c0, dataSourceName -> 1hge1ic9q1p2jxfa1sr07hi|3514a4c0 ]] of Hibernate SessionFactory for HibernateTransactionManager>
+2017-10-02 16:01:25.871 INFO [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] - <HHH000397: Using ASTQueryTranslatorFactory>
+2017-10-02 16:01:26.170 INFO [org.springframework.context.support.GenericApplicationContext] - <Closing org.springframework.context.support.GenericApplicationContext@4e9ba398: startup date [Mon Oct 02 16:01:18 CST 2017]; root of context hierarchy>
+2017-10-02 16:01:43.086 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - <Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]>
+2017-10-02 16:01:43.117 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - <Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@18ce0030, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4445629, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@45b9a632, org.springframework.test.context.support.DirtiesContextTestExecutionListener@25d250c6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4df50bcc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6b26e945]>
+2017-10-02 16:01:43.247 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from file [D:\git\jeesky\jeesky\src\main\webapp\WEB-INF\config-test\spring\aop.bean.xml]>
+2017-10-02 16:01:43.471 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from file [D:\git\jeesky\jeesky\src\main\webapp\WEB-INF\config-test\spring\data-source.bean.xml]>
+2017-10-02 16:01:43.496 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from file [D:\git\jeesky\jeesky\src\main\webapp\WEB-INF\config-test\spring\hibernate.bean.xml]>
+2017-10-02 16:01:43.554 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from file [D:\git\jeesky\jeesky\src\main\webapp\WEB-INF\config-test\spring\spring.bean.xml]>
+2017-10-02 16:01:43.706 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from file [D:\git\jeesky\jeesky\bin\cn\luna\sky\core\module\lines\Lines.bean.xml]>
+2017-10-02 16:01:43.772 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from file [D:\git\jeesky\jeesky\bin\cn\luna\sky\core\module\menu\menu.bean.xml]>
+2017-10-02 16:01:43.795 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@3f197a46: startup date [Mon Oct 02 16:01:43 CST 2017]; root of context hierarchy>
+2017-10-02 16:01:44.243 INFO [com.mchange.v2.log.MLog] - <MLog clients using slf4j logging.>
+2017-10-02 16:01:44.707 INFO [com.mchange.v2.c3p0.C3P0Registry] - <Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]>
+2017-10-02 16:01:45.695 INFO [org.hibernate.Version] - <HHH000412: Hibernate Core {5.2.11.Final}>
+2017-10-02 16:01:45.699 INFO [org.hibernate.cfg.Environment] - <HHH000206: hibernate.properties not found>
+2017-10-02 16:01:46.842 WARN [org.hibernate.orm.deprecation] - <HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.>
+2017-10-02 16:01:46.936 INFO [org.hibernate.annotations.common.Version] - <HCANN000001: Hibernate Commons Annotations {5.0.1.Final}>
+2017-10-02 16:01:47.118 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - <Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1ic9q1p2kgoh1cg5i8l|1fcb4808, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1ic9q1p2kgoh1cg5i8l|1fcb4808, idleConnectionTestPeriod -> 0, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3307/jeesky?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 40, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]>
+2017-10-02 16:01:47.686 INFO [org.hibernate.dialect.Dialect] - <HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect>
+2017-10-02 16:01:48.162 WARN [org.hibernate.id.UUIDHexGenerator] - <HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead>
+2017-10-02 16:01:48.875 INFO [org.springframework.orm.hibernate5.HibernateTransactionManager] - <Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource[ identityToken -> 1hge1ic9q1p2kgoh1cg5i8l|1fcb4808, dataSourceName -> 1hge1ic9q1p2kgoh1cg5i8l|1fcb4808 ]] of Hibernate SessionFactory for HibernateTransactionManager>
+2017-10-02 16:02:08.781 INFO [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] - <HHH000397: Using ASTQueryTranslatorFactory>
+2017-10-02 16:02:27.826 INFO [org.springframework.context.support.GenericApplicationContext] - <Closing org.springframework.context.support.GenericApplicationContext@3f197a46: startup date [Mon Oct 02 16:01:43 CST 2017]; root of context hierarchy>
